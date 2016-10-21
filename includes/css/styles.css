@@ -1,0 +1,409 @@
+/*
+
+My Custom CSS
+=============
+
+Author:  Elliot Graham
+Updated: October 2016
+Notes:	 Hand coded for SwarbrickAssociates.co.uk
+
+*/
+
+/* --------------------------------------
+   Sidebar
+   -------------------------------------- */
+/*Initially Hide the sidebar for and then show for devices with a wide enough screen*/
+.sidebar{
+    display: none;
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+    margin-right: -21px; /* 20px padding + 1px border */
+    margin-bottom: 20px;
+    margin-left: -20px;
+    background-color: transparent;
+    color: black;
+}
+.nav-sidebar > li > a {
+    padding-right: 20px;
+    padding-left: 20px;
+    color: black;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+    color: black;
+    background-color: transparent;
+}
+.nav-sidebar > .transparent > a:hover {
+    color: #808080;
+    -webkit-transition: all 300ms ease-out;
+	-moz-transition: all 300ms ease-out;
+	transition: all 300ms ease-out;
+}
+.bottom-page {
+    position: absolute;
+    bottom: 4vh;
+    right: 4vh;
+}
+
+/*Sidebar show if wider than mobile*/
+@media (min-width: 768px) {
+    .sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding-top: 20vh;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #fff;
+    border-right: 1px solid #eee;
+    text-align: right;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 45px;
+    }
+    
+    .nav-sidebar > li {
+        display: inline;
+    }
+}
+
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+/*Sidebar turns into a navbar on portrait devices*/
+.nav-hidden{
+    font-family: 'Julius Sans One', sans-serif;
+    text-align: center;
+    padding-bottom: 2vh;
+}
+
+.nav-full{
+    font-family: 'Julius Sans One', sans-serif;
+    text-align: center;
+    padding-bottom: 2vh;
+}
+
+
+#centeredmenu {
+   float:left;
+   width:100%;
+   overflow:hidden;
+   position:relative;
+}
+#centeredmenu ul {
+   clear:left;
+   float:left;
+   list-style:none;
+   margin:0;
+   padding:0;
+   position:relative;
+   left:50%;
+   text-align:center;
+}
+#centeredmenu ul li {
+   display:block;
+   float:left;
+   list-style:none;
+   margin:0;
+   padding:0;
+   position:relative;
+   right:50%;
+}
+#centeredmenu ul li a {
+   display:block;
+   margin:0 0 0 1px;
+   padding:3px 10px;
+   color:#000;
+   text-decoration:none;
+   line-height:1.3em;
+}
+#centeredmenu ul li a:hover {
+   color:#808080;
+}
+#centeredmenu ul li a.active,
+#centeredmenu ul li a.active:hover {
+   color:#808080;
+}
+
+
+/*navbar hide if wider than mobile*/
+@media (min-width: 768px) {
+    .nav-hidden {
+    display: none;
+}
+}
+
+/* --------------------------------------
+   Main content
+   -------------------------------------- */
+
+.main {
+    padding-left: 4vh;
+    padding-right: 0vh;
+    font-family: 'Montserrat', sans-serif;
+}
+.main .row{
+    margin-right: 1.5vh;
+}
+.featured {
+    padding-bottom: 2vh;
+}
+
+/* --------------------------------------
+   IMG HOVER RESPONSIVE
+   -------------------------------------- */
+
+.wrap{
+  width: 100%;
+  background-color: rgba(255,255,255,0.9);
+  overflow: hidden;
+}
+
+.wrap img{
+  max-width: 100%;
+  height: auto;
+  
+}
+
+.wrap h1, h2, h3, h4, h5, h6 { letter-spacing: 0.05em; font-weight: 400; }
+
+.wrap h1{text-align:center;}
+
+
+.more:link, .more:visited {
+  transition-duration: 0.2s;    
+  transition-timing-function: ease-out;
+}
+
+
+.show{
+  width: 100%;
+  height: 100%;
+  float: left;
+  border: 1px solid rgba(0,0,0,0.04);
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  background: #fff;
+  display: block;
+  border-radius: 4px;
+}
+
+.show .mask{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0
+}
+
+.show-third a.more {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px; 
+  background: #000;
+  color: #fff;
+  text-transform: uppercase;
+  box-shadow: 0 0 1px #000;
+  position: relative;
+}
+
+.show-third a.more:hover {
+  box-shadow: 0 0 5px #fff;
+  background-color: #222;
+}
+
+.show-third p{
+  font-size: 28px; 
+}
+
+.show-third .mask {
+  opacity: 0;
+  background-color: rgba(255,255,255, 0.5);
+  transition: all 0.4s ease-in-out;
+}
+
+.show-third h2 {
+  color: #000;
+  margin-top: 10%;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.show-third p {
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+
+.show-third a.info{
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.show-third img{
+  transition: all 0.2s ease-in-out;
+}
+
+.show-third:hover img {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+    filter: gray;
+    -webkit-filter: grayscale(100%);}
+
+.show-third:hover .mask {
+  opacity: 1;
+}
+.show-third:hover h2,
+.show-third:hover p,
+.show-third:hover a.info {
+  opacity: 1;
+}
+.show-third:hover p {
+  transition-delay: 0.1s;
+}
+.show-third:hover a.info {
+  transition-delay: 0.2s;
+}
+
+@media only screen and (max-width: 767px) { 
+  
+  .col-1-4{
+    width: 50%; 
+    padding: 10px;
+    overflow: hidden;
+    clear: right;
+  }
+
+  
+  .wrap{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;}
+  
+  .mobile-clear{
+    clear:both;}
+
+}
+
+/* --------------------------------------
+   Scroll to top
+   -------------------------------------- */
+
+#return-to-top {
+    position: fixed;
+    bottom: 3vh;
+    left: 4vh;
+    z-index: 100;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top .glyphicon {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: -11px;
+    top: 0px;
+    font-size: 29px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover span .glyphicon  {
+    align-content: center;
+    color: #fff;
+    top: 0px;
+}
+
+
+span{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* --------------------------------------
+   About Page
+   -------------------------------------- */
+
+#about {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.pad-top {
+    padding-top: 2vh;
+}
+.pad-bot {
+    padding-bottom: 2vh;
+}
+
+.negative {
+    background-image: url(../../images/aboutnegative.png);
+    background-size: fill;
+}
+
+.positive {
+    background-color: white;
+}
+
+.element{
+    padding:2vh;
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+}
+
+.equal{
+    overflow: hidden; 
+}
+
+
+#desktop-alternate{
+    display: none;
+}
+#mobile-alternate{
+    display: block;
+}
+
+@media (min-width: 768px) {
+    #mobile-alternate{
+        display:none;
+    }
+    #desktop-alternate{
+        display: block;
+    }
+}
+
+
+/* --------------------------------------
+   Contact Page
+   -------------------------------------- */
+
+map {
+    padding-left: 50hh;
+}
+
+#contact {
+    font-family: 'Montserrat', sans-serif;
+}
