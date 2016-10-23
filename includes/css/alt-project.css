@@ -1,0 +1,51 @@
+#return-to-top {
+    position: fixed;
+    bottom: 3vh;
+    left: 4vh;
+    z-index: 100;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top .glyphicon {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 10px;
+    top: 10px;
+    font-size: 29px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover span .glyphicon  {
+    align-content: center;
+    color: #fff;
+    top: 0px;
+}
+
+
+span{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+a:hover img {
+  transform: scale(1.05);
+}

@@ -407,3 +407,42 @@ map {
 #contact {
     font-family: 'Montserrat', sans-serif;
 }
+
+/* --------------------------------------
+   alt-project page
+   -------------------------------------- */
+
+#projectrow .pad-bot{
+    padding-bottom: 4vh;
+}
+
+.project-box {
+    padding-left: 2vh;
+    padding-right: 2vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card {
+    padding: 2vh;
+}
+
+.card h6{
+    text-align: left;
+    text-transform: uppercase;
+    color: #808080;
+}
+
+.project-box a {
+    color: black;
+}
+
+.project-box a:hover {
+    color: #808080;
+    text-decoration: none;
+    transform: scale(1.15);
+}
+
+.project-box img {
+    transition: transform .2s ease-in-out;
+}
+
