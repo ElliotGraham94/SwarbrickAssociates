@@ -66,7 +66,7 @@ Notes:	 Hand coded for SwarbrickAssociates.co.uk
     font-family: 'Julius Sans One', sans-serif;
     font-size: 45px;
     }
-    
+
     .nav-sidebar > li {
         display: inline;
     }
@@ -146,6 +146,8 @@ Notes:	 Hand coded for SwarbrickAssociates.co.uk
     padding-left: 4vh;
     padding-right: 0vh;
     font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+
 }
 .main .row{
     margin-right: 1.5vh;
@@ -167,7 +169,7 @@ Notes:	 Hand coded for SwarbrickAssociates.co.uk
 .wrap img{
   max-width: 100%;
   height: auto;
-  
+
 }
 
 .wrap h1, h2, h3, h4, h5, h6 { letter-spacing: 0.05em; font-weight: 400; }
@@ -176,7 +178,7 @@ Notes:	 Hand coded for SwarbrickAssociates.co.uk
 
 
 .more:link, .more:visited {
-  transition-duration: 0.2s;    
+  transition-duration: 0.2s;
   transition-timing-function: ease-out;
 }
 
@@ -207,7 +209,7 @@ Notes:	 Hand coded for SwarbrickAssociates.co.uk
 .show-third a.more {
   display: inline-block;
   text-decoration: none;
-  padding: 7px 14px; 
+  padding: 7px 14px;
   background: #000;
   color: #fff;
   text-transform: uppercase;
@@ -221,7 +223,7 @@ Notes:	 Hand coded for SwarbrickAssociates.co.uk
 }
 
 .show-third p{
-  font-size: 28px; 
+  font-size: 28px;
 }
 
 .show-third .mask {
@@ -271,21 +273,21 @@ Notes:	 Hand coded for SwarbrickAssociates.co.uk
   transition-delay: 0.2s;
 }
 
-@media only screen and (max-width: 767px) { 
-  
+@media only screen and (max-width: 767px) {
+
   .col-1-4{
-    width: 50%; 
+    width: 50%;
     padding: 10px;
     overflow: hidden;
     clear: right;
   }
 
-  
+
   .wrap{
     width: 100%;
     margin: auto;
     overflow: hidden;}
-  
+
   .mobile-clear{
     clear:both;}
 
@@ -350,6 +352,8 @@ span{
 
 #about {
     font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+
 }
 
 .pad-top {
@@ -375,7 +379,7 @@ span{
 }
 
 .equal{
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 
@@ -406,6 +410,8 @@ map {
 
 #contact {
     font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+
 }
 
 /* --------------------------------------
@@ -420,6 +426,8 @@ map {
     padding-left: 2vh;
     padding-right: 2vh;
     font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+
 }
 
 .card {
@@ -445,4 +453,3 @@ map {
 .project-box img {
     transition: transform .2s ease-in-out;
 }
-
