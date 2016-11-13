@@ -29,6 +29,7 @@ Notes:	 Hand coded for SwarbrickAssociates.co.uk
     padding-right: 20px;
     padding-left: 20px;
     color: black;
+    font-size: 0.5em;
 }
 .nav-sidebar > .active > a,
 .nav-sidebar > .active > a:hover,
@@ -63,7 +64,7 @@ Notes:	 Hand coded for SwarbrickAssociates.co.uk
     background-color: #fff;
     border-right: 1px solid #eee;
     text-align: right;
-    font-family: 'Julius Sans One', sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 45px;
     }
 
@@ -77,13 +78,13 @@ Notes:	 Hand coded for SwarbrickAssociates.co.uk
    -------------------------------------- */
 /*Sidebar turns into a navbar on portrait devices*/
 .nav-hidden{
-    font-family: 'Julius Sans One', sans-serif;
+    font-family: 'Arial', sans-serif;
     text-align: center;
     padding-bottom: 2vh;
 }
 
 .nav-full{
-    font-family: 'Julius Sans One', sans-serif;
+    font-family: 'Arial', sans-serif;
     text-align: center;
     padding-bottom: 2vh;
 }
@@ -145,9 +146,7 @@ Notes:	 Hand coded for SwarbrickAssociates.co.uk
 .main {
     padding-left: 4vh;
     padding-right: 0vh;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Open Sans', sans-serif;
-
+    font-family: 'Arial', sans-serif;
 }
 .main .row{
     margin-right: 1.5vh;
@@ -304,8 +303,8 @@ Notes:	 Hand coded for SwarbrickAssociates.co.uk
     z-index: 100;
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.7);
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     display: block;
     text-decoration: none;
     -webkit-border-radius: 35px;
@@ -322,8 +321,8 @@ Notes:	 Hand coded for SwarbrickAssociates.co.uk
     color: #fff;
     margin: 0;
     position: relative;
-    left: -11px;
-    top: 0px;
+    left: -7px;
+    top: -10px;
     font-size: 29px;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
@@ -343,7 +342,7 @@ Notes:	 Hand coded for SwarbrickAssociates.co.uk
 
 span{
     color: white;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 
 /* --------------------------------------
@@ -351,8 +350,7 @@ span{
    -------------------------------------- */
 
 #about {
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Arial', sans-serif;
 
 }
 
@@ -409,8 +407,7 @@ map {
 }
 
 #contact {
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Arial', sans-serif;
 
 }
 
@@ -425,8 +422,7 @@ map {
 .project-box {
     padding-left: 2vh;
     padding-right: 2vh;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Arial', sans-serif;
 
 }
 
@@ -452,4 +448,12 @@ map {
 
 .project-box img {
     transition: transform .2s ease-in-out;
+}
+
+h1 a:hover {
+  text-decoration: none;
+  color: #808080
+}
+h1 a{
+  color: black;
 }
